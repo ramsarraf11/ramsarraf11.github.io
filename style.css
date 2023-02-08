@@ -112,8 +112,7 @@ nav ul li a:hover::after {
 
 /* Portfolio */
 
-#portfolio {
-}
+
 .work-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
