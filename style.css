@@ -267,6 +267,20 @@ form textarea {
 .skills-card h2 {
   font-weight: 400;
 }
+/* Code for GithUB section */
+.github-content {
+  margin-top: 30px;
+}
+/* .calendar.react-activity-calendar {
+  width: 80%;
+}*/
+.github-content img {
+  /* display: block; */
+  margin-bottom: 20px;
+}
+.calendar.react-activity-calendar .contrib-column.table-column span {
+  color: white;
+}
 /* CSS for Responsiveness */
 nav .fa-solid {
   display: none;
@@ -403,6 +417,9 @@ nav .fa-solid {
   }
   .skill-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .github-content img{
+    width: 100%;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 600px) {
