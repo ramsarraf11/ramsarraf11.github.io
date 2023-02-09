@@ -378,7 +378,8 @@
           return fetch(`https://your-proxy.com/github?user=${username}`);
         },
       })
-//       .then((r) => r.text());
+      .then((r) => r.text());
+      .catch((e)=>{console.log(e)})
     </script>
   </body>
 </html>
