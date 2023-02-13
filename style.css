@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  background: #080808;
+  background: black;
+  /* background: #080808; */
   color: white;
 }
 #resume,

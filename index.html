@@ -1,408 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ram Sarraf</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="nav-wrapper">
-      <nav id="nav-menu">
-        <h2><a id="logo" href="">Ram Sarraf</a></h2>
-        <ul id="sidemenu">
-          <li><a class="nav-link home" href="#">Home</a></li>
-          <li><a class="nav-link about" href="#about">About Me</a></li>
-          <li><a class="nav-link skills" href="#skills">Skills</a></li>
-          <li><a class="nav-link projects" href="#projects">Project</a></li>
 
-          <li><a class="nav-link contact" href="#contact">Contact</a></li>
-          <li>
-            <button
-              onclick="resume()"
-              id="resume-button-1"
-              class="nav-link resume btn btn2"
-            >
-              Resume
-            </button>
-          </li>
-          <i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
-        </ul>
-        <i onclick="openMenu()" class="fa-solid fa-bars"></i>
-      </nav>
-    </div>
-    <div id="header">
-      <div id="home" class="container">
-        <div id="resume-d" class="header-text">
-          <p id="user-detail-intro">Node Developer</p>
-          <h1 id="user-detail-name">
-            Hi,I'm <span>Ram Sarraf</span><br />
-            From Pune,India
-          </h1>
-          <button onclick="resume()" id="resume-button-2" class="btn btn2">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ram Sarraf</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="nav-wrapper">
+    <nav id="nav-menu">
+      <h2><a id="logo" href="">Ram Sarraf</a></h2>
+      <ul id="sidemenu">
+        <li><a class="nav-link home" href="#">Home</a></li>
+        <li><a class="nav-link about" href="#about">About Me</a></li>
+        <li><a class="nav-link skills" href="#skills">Skills</a></li>
+        <li><a class="nav-link projects" href="#projects">Project</a></li>
+
+        <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        <li>
+          <button onclick="resume()" id="resume-button-1" class="nav-link resume btn btn2">
             Resume
           </button>
+        </li>
+        <i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+      </ul>
+      <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+    </nav>
+  </div>
+  <div id="header">
+    <div id="home" class="container">
+      <div id="resume-d" class="header-text">
+        <p id="user-detail-intro">Node Developer</p>
+        <h1 id="user-detail-name">
+          Hi,I'm <span>Ram Sarraf</span><br />
+          From Pune,India
+        </h1>
+        <button onclick="resume()" id="resume-button-2" class="btn btn2">
+          Resume
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="about section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img class="home-img" src="./stats/images/profile_pic.png" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p id="user-detail-intro">
+            Ambitious Aspiring Backend Developer with good knowledge in
+            Java,Javascript Hibernate, Spring, Spring Boot,SQL, RDBMS, and
+            Rest API. Passionate about coding and learning new technologies,
+            Looking forward to working in a reputed company.Can pick up
+            another framework or language according to my needs and get my
+            work done!
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links"></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="about section" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img
-              class="home-img"
-              src="./stats/images/profile_pic.png"
-              alt=""
-            />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p id="user-detail-intro">
-              Ambitious Aspiring Backend Developer with good knowledge in
-              Java,Javascript Hibernate, Spring, Spring Boot,SQL, RDBMS, and
-              Rest API. Passionate about coding and learning new technologies,
-              Looking forward to working in a reputed company.Can pick up
-              another framework or language according to my needs and get my
-              work done!
+  </div>
+  <!-- Skills -->
+  <div id="skills">
+    <div class="container">
+      <h1 class="skill-title sub-title">Skills</h1>
+      <div class="skill-wrapper">
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/nodejs-ar21.png" alt="" />
+          <h2 class="skills-card-name">NodeJs</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/download.png" alt="" />
+          <h2 class="skills-card-name">MongoDB</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/express-logo.png" alt="" />
+          <h2 class="skills-card-name">ExpressJs</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/sql.png" alt="" />
+          <h2 class="skills-card-name">MySQL</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/postman.png" alt="" />
+          <h2 class="skills-card-name">PostMan</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/javascript-39404.png" alt="" />
+          <h2 class="skills-card-name">Javascript</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/html.png" alt="" />
+          <h2 class="skills-card-name">HTML</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/css.png" alt="" />
+          <h2 class="skills-card-name">CSS</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/GitHub-Mark.png" alt="" />
+          <h2 class="skills-card-name">GitHub</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./stats/images/github.png" alt="" />
+          <h2 class="skills-card-name">Git</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="github-content container">
+    <h1 class="sub-title">Github Stats</h1>
+    <p>
+      <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramsarraf11"
+        alt="ramsarraf11" />
+    </p>
+    <!-- <br> -->
+    <p>
+      &nbsp;<img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=ramsarraf11"
+        alt="ramsarraf11" />
+    </p>
+    <p>
+      <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=ramsarraf11"
+        alt="ramsarraf11" />
+    </p>
+    <div class="github-content-wrapper">
+      <div class="calendar react-activity-calendar">
+        Loading stuff Loading the data just for you.
+      </div>
+    </div>
+  </div>
+  <!-- Projects -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work project-card">
+          <img src="./stats/images/flowerShop.png" alt="" />
+          <div class="layer">
+            <h3 class="project-title">Flower Gift Shop</h3>
+            <p class="project-description">
+              A Gift Shop that helps the user to make their
+              occasion more special with our products.
             </p>
-            <div class="tab-titles">
-              <p class="tab-links"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skills -->
-    <div id="skills">
-      <div class="container">
-        <h1 class="skill-title sub-title">Skills</h1>
-        <div class="skill-wrapper">
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/nodejs-ar21.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">NodeJs</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/download.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">MongoDB</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/express-logo.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">ExpressJs</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/sql.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">MySQL</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/postman.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">PostMan</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/javascript-39404.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">Javascript</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/html.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">HTML</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/css.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">CSS</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/GitHub-Mark.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">GitHub</h2>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              src="./stats/images/github.png"
-              alt=""
-            />
-            <h2 class="skills-card-name">Git</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="github-content container">
-      <h1 class="sub-title">Github Stats</h1>
-      <p>
-        <img
-          id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramsarraf11"
-          alt="ramsarraf11"
-        />
-      </p>
-      <!-- <br> -->
-      <p>
-        &nbsp;<img
-          id="github-stats-card"
-          src="https://github-readme-stats.vercel.app/api?username=ramsarraf11"
-          alt="ramsarraf11"
-        />
-      </p>
-      <p>
-        <img
-          id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=ramsarraf11"
-          alt="ramsarraf11"
-        />
-      </p>
-      <div class="github-content-wrapper">
-        <div class="calendar react-activity-calendar">
-          Loading stuff Loading the data just for you.
-        </div>
-      </div>
-    </div>
-    <!-- Projects -->
-    <div id="projects">
-      <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <div class="work-list">
-          <div class="work project-card">
-            <img src="./stats/images/flowerShop.png" alt="" />
-            <div class="layer">
-              <h3 class="project-title">Flower Gift Shop</h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem dolor repellendus tempore voluptatem! Ut harum eaque,
-                repudiandae magnam eos mollitia sit alias reiciendis iure quo
-                veritatis quod ipsa dolorum aperiam!
-              </p>
-              <h4 class="project-tech-stack">
-                Tech stack used:HTML,CSS,Javascript
-              </h4>
+            <h4 class="project-tech-stack">
+              Tech stack used:HTML,CSS,Javascript,MongoDB,NodeJs,ExpreeJs
+            </h4>
 
-              <div class="deploy">
-                <a
-                  class="project-deployed-link"
-                  target="_blank"
-                  href="https://melted-frontend.vercel.app/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-                <a
-                  class="project-github-link"
-                  target="_blank"
-                  href="https://github.com/ramsarraf11/melted-scale-2590/"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="work project-card">
-            <img src="./stats/images/flowerShop.png" alt="" />
-            <div class="layer">
-              <h3 class="project-title">Social Media</h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem dolor repellendus tempore voluptatem! Ut harum eaque,
-                repudiandae magnam eos mollitia sit alias reiciendis iure quo
-                veritatis quod ipsa dolorum aperiam!
-              </p>
-              <h4 class="project-tech-stack">
-                Tech stack used:HTML,CSS,Javascript
-              </h4>
-
-              <div class="deploy">
-                <a
-                  class="project-deployed-link"
-                  target="_blank"
-                  href="https://melted-frontend.vercel.app/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-                <a
-                  class="project-github-link"
-                  target="_blank"
-                  href="https://github.com/ramsarraf11/melted-scale-2590/"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="work project-card">
-            <img src="./stats/images/flowerShop.png" alt="" />
-            <div class="layer">
-              <h3 class="project-title">Social Media</h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem dolor repellendus tempore voluptatem! Ut harum eaque,
-                repudiandae magnam eos mollitia sit alias reiciendis iure quo
-                veritatis quod ipsa dolorum aperiam!
-              </p>
-              <h4 class="project-tech-stack">
-                Tech stack used:HTML,CSS,Javascript
-              </h4>
-
-              <div class="deploy">
-                <a
-                  class="project-deployed-link"
-                  target="_blank"
-                  href="https://melted-frontend.vercel.app/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-                <a
-                  class="project-github-link"
-                  target="_blank"
-                  href="https://github.com/ramsarraf11/melted-scale-2590/"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="work project-card">
-            <img src="./stats/images/flowerShop.png" alt="" />
-            <div class="layer">
-              <h3 class="project-title">Social Media</h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem dolor repellendus tempore voluptatem! Ut harum eaque,
-                repudiandae magnam eos mollitia sit alias reiciendis iure quo
-                veritatis quod ipsa dolorum aperiam!
-              </p>
-              <h4 class="project-tech-stack">
-                Tech stack used:HTML,CSS,Javascript
-              </h4>
-              <div class="deploy">
-                <a
-                  class="project-deployed-link"
-                  target="_blank"
-                  href="https://melted-frontend.vercel.app/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-                <a
-                  class="project-github-link"
-                  target="_blank"
-                  href="https://github.com/ramsarraf11/melted-scale-2590/"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
+            <div class="deploy">
+              <a class="project-deployed-link" target="_blank" href="https://melted-frontend.vercel.app/"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-github-link" target="_blank" href="https://github.com/ramsarraf11/melted-scale-2590/"><i
+                  class="fa-brands fa-github"></i></a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact</h1>
-            <p id="contact-email">
-              <i class="fa-solid fa-envelope"></i>ramsarraf00@gmail.com
+        <div class="work project-card">
+          <img src="./stats/images/airtable.png.png" alt="" />
+          <div class="layer">
+            <h3 class="project-title">Database Managment</h3>
+            <p class="project-description">
+              Airtable is a cloud collaboration service, a
+              spreadsheet-database hybrid, with the
+              features of a database.
             </p>
-            <p id="contact-phone">
-              <i class="fa-solid fa-phone"></i>+91 8806601132
-            </p>
-            <div class="social-icons">
-              <a
-                id="contact-linkedin"
-                href="https://www.linkedin.com/in/ram-sarraf-049972200/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a id="contact-github" href="https://github.com/ramsarraf11"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://twitter.com/RamSarraf12"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+            <h4 class="project-tech-stack">
+              Tech stack used:HTML,CSS,Javascript
+            </h4>
+
+            <div class="deploy">
+              <a class="project-deployed-link" target="_blank" href="https://overjoyed-class-89.vercel.app/"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-github-link" target="_blank" href="https://github.com/ramsarraf11/overjoyed-class-89"><i
+                  class="fa-brands fa-github"></i></a>
             </div>
           </div>
-          <div class="contact-right">
-            <form action="">
-              <input type="text" placeholder="Name" required />
-              <input type="text" placeholder="Email" required />
-              <textarea
-                name="Message"
-                placeholder="Message"
-                id=""
-                cols="30"
-                rows="10"
-              ></textarea>
-              <button class="btn btn2" type="submit">Submit</button>
-            </form>
+        </div>
+        <div class="work project-card">
+          <img src="./stats/images/bonsai.png.png" alt="" />
+          <div class="layer">
+            <h3 class="project-title">Bill Managment Website</h3>
+            <p class="project-description">
+              UrWork all-in-one product suite with smart
+              automation lets you focus on your passion, not
+              your paperwork.
+            </p>
+            <h4 class="project-tech-stack">
+              Tech stack used:HTML,CSS,Javascript
+            </h4>
+
+            <div class="deploy">
+              <a class="project-deployed-link" target="_blank" href="https://genuine-pithivier-c02697.netlify.app/"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-github-link" target="_blank" href="https://github.com/ramsarraf11/mute-test-4637"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="work project-card">
+          <img src="./stats/images/portfolio.png" alt="" />
+          <div class="layer">
+            <h3 class="project-title">My Portfolio</h3>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolorem dolor repellendus tempore voluptatem! Ut harum eaque,
+              repudiandae magnam eos mollitia sit alias reiciendis iure quo
+              veritatis quod ipsa dolorum aperiam!
+            </p>
+            <h4 class="project-tech-stack">
+              Tech stack used:HTML,CSS,Javascript
+            </h4>
+            <div class="deploy">
+              <a class="project-deployed-link" target="_blank" href="ramsarraf11.github.io"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-github-link" target="_blank" href="https://github.com/ramsarraf11/ramsarraf11.github.io"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © Ram.</p>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact</h1>
+          <p id="contact-email">
+            <i class="fa-solid fa-envelope"></i>ramsarraf00@gmail.com
+          </p>
+          <p id="contact-phone">
+            <i class="fa-solid fa-phone"></i>+91 8806601132
+          </p>
+          <div class="social-icons">
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/ram-sarraf-049972200/"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a id="contact-github" href="https://github.com/ramsarraf11"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/RamSarraf12"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="Email" required />
+            <textarea name="Message" placeholder="Message" id="" cols="30" rows="10"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-    <script>
-      function resume() {
-        window.open("./stats/images/Ram_Sarraf_Resume.pdf", "_blank");
-      }
-      let sidemenu = document.getElementById("sidemenu");
-      function openMenu() {
-        sidemenu.style.right = 0;
-      }
-      function closeMenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script>
-      // GitHubCalendar(".calendar", "ramsarraf11");
+    <div class="copyright">
+      <p>Copyright © Ram.</p>
+    </div>
+  </div>
+  <script>
+    function resume() {
+      window.open("./stats/images/Ram_Sarraf_Resume.pdf", "_blank");
+    }
+    let sidemenu = document.getElementById("sidemenu");
+    function openMenu() {
+      sidemenu.style.right = 0;
+    }
+    function closeMenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script>
+    // GitHubCalendar(".calendar", "ramsarraf11");
 
-      // or enable responsive functionality:
-      GitHubCalendar(".calendar", "ramsarraf11");
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "ramsarraf11");
 
-      // Use a proxy
-      GitHubCalendar(".calendar", "ramsarraf11", {
-        proxy(username) {
-          return fetch(`https://your-proxy.com/github?user=${username}`);
-        },
-      })
+    // Use a proxy
+    GitHubCalendar(".calendar", "ramsarraf11", {
+      proxy(username) {
+        return fetch(`https://your-proxy.com/github?user=${username}`);
+      },
+    })
       .then((r) => r.text())
-      .catch((err)=>{
+      .catch((err) => {
         console.log(err)
       })
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
