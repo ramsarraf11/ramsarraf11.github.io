@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: black;
+  background: rgb(50, 66, 17) ;
   /* background: #080808; */
   color: white;
 }
@@ -60,7 +60,7 @@ nav ul li a::after {
   content: " ";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: white;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -84,7 +84,7 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 .header-text h1 span {
-  color: #ff004f;
+  color: black;
 }
 /* About */
 #about {
@@ -134,7 +134,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.6),black);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -156,7 +156,6 @@ nav ul li a:hover::after {
 }
 .layer > .deploy > a {
   margin-top: 10px;
-  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -190,10 +189,10 @@ nav ul li a:hover::after {
   color: #ff004f;
   margin-right: 15px;
 }
-.social-icons {
+.social {
   margin-top: 35px;
 }
-.social-icons a {
+.social a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -201,13 +200,13 @@ nav ul li a:hover::after {
   display: inline-block;
   transition: transform 0.5s;
 }
-.social-icons a:hover {
+.social a:hover {
   color: #ff004f;
   transform: scaleY(-5px);
 }
 .btn.btn2 {
   display: inline-block;
-  background-color: #ff004f;
+  background-color: green;
   color: white;
   padding: 10px 20px;
   font-size: 18px;
@@ -222,7 +221,7 @@ form textarea {
   width: 100%;
   outline: none;
   border: none;
-  background: #262626;
+  background: white;
   padding: 15px;
   color: #fff;
   font-size: 18px;

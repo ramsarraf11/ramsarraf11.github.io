@@ -14,9 +14,10 @@
 </head>
 
 <body>
+  <!-- NavBar Section Starts -->
   <div class="nav-wrapper">
     <nav id="nav-menu">
-      <h2><a id="logo" href="">Ram Sarraf</a></h2>
+      <h2><a id="logo" href="">//</a></h2>
       <ul id="sidemenu">
         <li><a class="nav-link home" href="#">Home</a></li>
         <li><a class="nav-link about" href="#about">About Me</a></li>
@@ -34,14 +35,14 @@
       <i onclick="openMenu()" class="fa-solid fa-bars"></i>
     </nav>
   </div>
+  <!-- NavBar Section Starts -->
   <div id="header">
     <div id="home" class="container">
       <div id="resume-d" class="header-text">
-        <p id="user-detail-intro">Node Developer</p>
-        <h1 id="user-detail-name">
+        <h1 id="my-name">
           Hi,I'm <span>Ram Sarraf</span><br />
-          From Pune,India
         </h1>
+        <p id="my-title">Node Backend Developer</p>
         <button onclick="resume()" id="resume-button-2" class="btn btn2">
           Resume
         </button>
@@ -237,12 +238,12 @@
         <div class="contact-left">
           <h1 class="sub-title">Contact</h1>
           <p id="contact-email">
-            <i class="fa-solid fa-envelope"></i>ramsarraf00@gmail.com
+            <i></i>ramsarraf00@gmail.com
           </p>
           <p id="contact-phone">
-            <i class="fa-solid fa-phone"></i>+91 8806601132
+            <i></i>+91 8806601132
           </p>
-          <div class="social-icons">
+          <div class="social">
             <a id="contact-linkedin" href="https://www.linkedin.com/in/ram-sarraf-049972200/"><i
                 class="fa-brands fa-linkedin"></i></a>
             <a id="contact-github" href="https://github.com/ramsarraf11"><i class="fa-brands fa-github"></i></a>
@@ -277,12 +278,7 @@
   </script>
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script>
-    // GitHubCalendar(".calendar", "ramsarraf11");
-
-    // or enable responsive functionality:
     GitHubCalendar(".calendar", "ramsarraf11");
-
-    // Use a proxy
     GitHubCalendar(".calendar", "ramsarraf11", {
       proxy(username) {
         return fetch(`https://your-proxy.com/github?user=${username}`);
