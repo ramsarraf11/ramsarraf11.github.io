@@ -31,10 +31,10 @@ body {
   text-decoration: none;
   color: white;
 }
-#header {
+#head {
   width: 100%;
 }
-.container {
+.containes {
   padding: 10px 10%;
 }
 nav {
@@ -68,21 +68,21 @@ nav ul li a:hover::after {
   width: 100%;
   transition: 0.5s;
 }
-.header-text {
+.head-text {
   margin-top: 20%;
   font-size: 30px;
 }
 
-#logo,
-#logo:visited {
+#mylogo,
+#mylogo:visited {
   color: #fff;
   text-decoration: none;
 }
-.header-text h1 {
+.head-text h1 {
   font-size: 60px;
   margin-top: 20px;
 }
-.header-text h1 span {
+.head-text h1 span {
   color: black;
 }
 /* About */
@@ -90,18 +90,18 @@ nav ul li a:hover::after {
   padding: 80px 0;
   color: #ababab;
 }
-.row {
+.containes-1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.about-col-1 {
+.row {
   flex-basis: 35%;
 }
-.about-col-1 img {
+.row img {
   width: 100%;
 }
-.about-col-2 {
+.about-2 {
   flex-basis: 60%;
 }
 .sub-title {
@@ -113,7 +113,7 @@ nav ul li a:hover::after {
 /* Portfolio */
 
 
-.work-list {
+.work-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -130,7 +130,7 @@ nav ul li a:hover::after {
   position: relative;
   overflow: hidden;
 }
-.layer {
+.box {
   width: 100%;
   height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6),black);
@@ -144,7 +144,7 @@ nav ul li a:hover::after {
   font-size: 15px;
   transition: height 0.5s;
 }
-.layer h3 {
+.box h3 {
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -153,7 +153,7 @@ nav ul li a:hover::after {
   gap: 10px;
   justify-content: space-around;
 }
-.layer > .deploy > a {
+.box > .deploy > a {
   margin-top: 10px;
   text-decoration: none;
   font-size: 18px;
@@ -171,7 +171,7 @@ nav ul li a:hover::after {
 .work:hover img {
   transform: scale(1.1);
 }
-.work:hover .layer {
+.work:hover .box {
   height: 100%;
 }
 /* Contact */
@@ -179,7 +179,7 @@ nav ul li a:hover::after {
   flex-basis: 35%;
 }
 .contact-right {
-  flex-basis: 60%;
+  flex-basis: 40%;
 }
 .contact-left p {
   margin-top: 30px;
@@ -285,10 +285,10 @@ nav .fa-solid {
   display: none;
 }
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
-  .layer {
+  .box {
     font-size: 10px;
   }
-  .layer > .deploy > a {
+  .box > .deploy > a {
     font-size: 12px;
     margin-top: -17px;
     width: 30px;
@@ -325,28 +325,28 @@ nav .fa-solid {
     left: 25px;
     cursor: pointer;
   }
-  .header-text {
+  .head-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .header-text h1 {
+  .head-text h1 {
     margin-bottom: 40px;
     font-size: 60px;
   }
-  .header-text p {
+  .head-text p {
     font-size: 40px;
   }
-  .layer {
+  .box {
     width: 100%;
     padding: 0 40px;
     font-size: 18px;
   }
-  .layer > .deploy > a {
+  .box > .deploy > a {
     font-size: 20px;
     width: 50px;
     height: 45px;
   }
-  .work-list {
+  .work-wrap {
     grid-template-columns: 1fr;
   }
 }
@@ -356,18 +356,18 @@ nav .fa-solid {
     display: block;
     font-size: 25px;
   }
-  .header-text {
+  .head-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .header-text h1 {
+  .head-text h1 {
     margin-bottom: 40px;
     font-size: 40px;
   }
-  .header-text p {
+  .head-text p {
     font-size: 30px;
   }
-  .work-list {
+  .work-wrap {
     grid-template-columns: 1fr;
   }
   nav ul {
@@ -393,24 +393,24 @@ nav .fa-solid {
   .sub-title {
     font-size: 40px;
   }
-  .about-col-1,
-  .about-col-2 {
+  .row,
+  .about-2 {
     flex-basis: 100%;
   }
-  .about-col-2,
+  .about-2,
   .copyright {
     font-size: 14px;
   }
   .contact-right,
   .contact-left {
-    flex-basis: 100%;
+    flex-basis: 40%;
   }
-  .layer {
+  .box {
     width: 100%;
     padding: 0;
     font-size: 10px;
   }
-  .layer > .deploy > a {
+  .box > .deploy > a {
     font-size: 10px;
     width: 40px;
     height: 20px;
@@ -427,18 +427,18 @@ nav .fa-solid {
     display: block;
     font-size: 25px;
   }
-  .header-text {
+  .head-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .header-text h1 {
+  .head-text h1 {
     margin-bottom: 40px;
     font-size: 40px;
   }
-  .header-text p {
+  .head-text p {
     font-size: 30px;
   }
-  .work-list {
+  .work-wrap {
     grid-template-columns: 1fr;
   }
   nav ul {
@@ -464,11 +464,11 @@ nav .fa-solid {
   .sub-title {
     font-size: 40px;
   }
-  .about-col-1,
-  .about-col-2 {
+  .row,
+  .about-2 {
     flex-basis: 100%;
   }
-  .about-col-2,
+  .about-2,
   .copyright {
     font-size: 14px;
   }
@@ -476,11 +476,11 @@ nav .fa-solid {
   .contact-left {
     flex-basis: 100%;
   }
-  .layer {
+  .box {
     width: 100%;
     padding: 0;
   }
-  .layer > .deploy > a {
+  .box > .deploy > a {
     font-size: 13px;
     width: 40px;
     height: 20px;
