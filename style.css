@@ -185,7 +185,7 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 .contact-left p i {
-  color: #ff004f;
+  color: black;
   margin-right: 15px;
 }
 .social {
@@ -200,7 +200,7 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 .social a:hover {
-  color: #ff004f;
+  color: black;
   transform: scaleY(-5px);
 }
 .btn.btn2 {
@@ -305,7 +305,8 @@ nav .fa-solid {
     font-size: 25px;
   }
   nav ul {
-    background: #ff004f;
+    /* background: #ff004f; */
+    background: black;
     position: fixed;
     top: 0;
     right: -200px;
@@ -370,7 +371,7 @@ nav .fa-solid {
     grid-template-columns: 1fr;
   }
   nav ul {
-    background: #ff004f;
+    background: black;
     position: fixed;
     top: 0;
     right: -200px;
@@ -441,7 +442,7 @@ nav .fa-solid {
     grid-template-columns: 1fr;
   }
   nav ul {
-    background: #ff004f;
+    background: black;
     position: fixed;
     top: 0;
     right: -200px;
