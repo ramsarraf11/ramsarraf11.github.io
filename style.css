@@ -9,16 +9,19 @@ html {
   scroll-behavior: smooth;
 }
 .nav-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   background-color: #111010;
-  padding: 10px 10%;
+  padding: 0px 4%;
   z-index: 1;
+  /* margin-bottom: 20px; */
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
+/* Sticky */
 
 body {
-  background: rgb(50, 66, 17) ;
+  background: #080808;
   color: white;
 }
 #resume,
@@ -31,10 +34,10 @@ body {
   text-decoration: none;
   color: white;
 }
-#head {
+#header {
   width: 100%;
 }
-.containes {
+.container {
   padding: 10px 10%;
 }
 nav {
@@ -59,7 +62,7 @@ nav ul li a::after {
   content: " ";
   width: 0;
   height: 3px;
-  background: white;
+  background: #ff004f;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -68,40 +71,40 @@ nav ul li a:hover::after {
   width: 100%;
   transition: 0.5s;
 }
-.head-text {
+.header-text {
   margin-top: 20%;
   font-size: 30px;
 }
 
-#mylogo,
-#mylogo:visited {
+#logo,
+#logo:visited {
   color: #fff;
   text-decoration: none;
 }
-.head-text h1 {
+.header-text h1 {
   font-size: 60px;
   margin-top: 20px;
 }
-.head-text h1 span {
-  color: black;
+.header-text h1 span {
+  color: #ff004f;
 }
 /* About */
 #about {
   padding: 80px 0;
   color: #ababab;
 }
-.containes-1 {
+.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.row {
+.about-col-1 {
   flex-basis: 35%;
 }
-.row img {
+.about-col-1 img {
   width: 100%;
 }
-.about-2 {
+.about-col-2 {
   flex-basis: 60%;
 }
 .sub-title {
@@ -109,15 +112,22 @@ nav ul li a:hover::after {
   font-size: 60px;
   font-weight: 600;
 }
-
+ #projects {
+  padding-top: 60px;
+} 
+.project-tech-stack{
+  margin: 4px;
+  font-weight: 600;
+}
 /* Portfolio */
 
-
-.work-wrap {
+#portfolio {
+}
+.work-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   grid-row: 200px;
 }
 .work img {
@@ -130,10 +140,10 @@ nav ul li a:hover::after {
   position: relative;
   overflow: hidden;
 }
-.box {
+.layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6),black);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -144,7 +154,7 @@ nav ul li a:hover::after {
   font-size: 15px;
   transition: height 0.5s;
 }
-.box h3 {
+.layer h3 {
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -153,8 +163,9 @@ nav ul li a:hover::after {
   gap: 10px;
   justify-content: space-around;
 }
-.box > .deploy > a {
+.layer > .deploy > a {
   margin-top: 10px;
+  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -171,27 +182,30 @@ nav ul li a:hover::after {
 .work:hover img {
   transform: scale(1.1);
 }
-.work:hover .box {
+.work:hover .layer {
   height: 100%;
 }
 /* Contact */
+#contact{
+ padding-top: 60px;
+}
 .contact-left {
   flex-basis: 35%;
 }
 .contact-right {
-  flex-basis: 40%;
+  flex-basis: 60%;
 }
 .contact-left p {
   margin-top: 30px;
 }
 .contact-left p i {
-  color: black;
+  color: #ff004f;
   margin-right: 15px;
 }
-.social {
+.social-icons {
   margin-top: 35px;
 }
-.social a {
+.social-icons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -199,18 +213,21 @@ nav ul li a:hover::after {
   display: inline-block;
   transition: transform 0.5s;
 }
-.social a:hover {
-  color: black;
+.social-icons a:hover {
+  color: #ff004f;
   transform: scaleY(-5px);
 }
 .btn.btn2 {
   display: inline-block;
-  background-color: green;
+  background-color: #ff004f;
   color: white;
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 10px;
   cursor: pointer;
+}
+#resume-link-2{
+  text-decoration: none;
 }
 .contact-right {
   width: 100%;
@@ -220,7 +237,7 @@ form textarea {
   width: 100%;
   outline: none;
   border: none;
-  background: white;
+  background: #262626;
   padding: 15px;
   color: #fff;
   font-size: 18px;
@@ -242,6 +259,7 @@ form textarea {
 }
 /* Skill */
 #skills {
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -266,29 +284,60 @@ form textarea {
 .skills-card h2 {
   font-weight: 400;
 }
-/* Code for GithUB section */
-.github-content {
-  margin-top: 30px;
-}
-/* .calendar.react-activity-calendar {
-  width: 80%;
-}*/
-.github-content img {
-  /* display: block; */
-  margin-bottom: 20px;
-}
-.calendar.react-activity-calendar .contrib-column.table-column span {
-  color: white;
-}
 /* CSS for Responsiveness */
 nav .fa-solid {
   display: none;
 }
-@media only screen and (min-width: 601px) and (max-width: 1100px) {
-  .box {
+/* Code for GithUB section */
+.github-content {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.github-content.container img{
+  width: 45%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+/* .calendar.react-activity-calendar {
+  width: 80%;
+}*/
+
+.calendar.react-activity-calendar .contrib-column.table-column span {
+  color: white;
+}
+@media only screen and (min-width: 601px) and (max-width: 840px) {
+  .nav-wrapper {
+    padding: 15px 4%;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .layer {
     font-size: 10px;
   }
-  .box > .deploy > a {
+  .layer > .deploy > a {
     font-size: 12px;
     margin-top: -17px;
     width: 30px;
@@ -298,15 +347,20 @@ nav .fa-solid {
   .deploy {
     gap: 219px;
   }
+  .github-content img {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 700px) {
-  nav .fa-solid {
+  .nav-wrapper {
+    padding: 15px 4%;
+  }
+  /* nav .fa-solid {
     display: block;
     font-size: 25px;
   }
   nav ul {
-    /* background: #ff004f; */
-    background: black;
+    background: #ff004f;
     position: fixed;
     top: 0;
     right: -200px;
@@ -324,54 +378,57 @@ nav .fa-solid {
     top: 25px;
     left: 25px;
     cursor: pointer;
-  }
-  .head-text {
+  } */
+  .header-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .head-text h1 {
+  .header-text h1 {
     margin-bottom: 40px;
     font-size: 60px;
   }
-  .head-text p {
+  .header-text p {
     font-size: 40px;
   }
-  .box {
+  .layer {
     width: 100%;
     padding: 0 40px;
     font-size: 18px;
   }
-  .box > .deploy > a {
+  .layer > .deploy > a {
     font-size: 20px;
     width: 50px;
     height: 45px;
   }
-  .work-wrap {
+  .work-list {
     grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 499px) {
+  .nav-wrapper {
+    padding: 15px 4%;
+  }
   nav .fa-solid {
     display: block;
     font-size: 25px;
   }
-  .head-text {
+  .header-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .head-text h1 {
+  .header-text h1 {
     margin-bottom: 40px;
     font-size: 40px;
   }
-  .head-text p {
+  .header-text p {
     font-size: 30px;
   }
-  .work-wrap {
+  .work-list {
     grid-template-columns: 1fr;
   }
   nav ul {
-    background: black;
+    background: #ff004f;
     position: fixed;
     top: 0;
     right: -200px;
@@ -393,24 +450,25 @@ nav .fa-solid {
   .sub-title {
     font-size: 40px;
   }
-  .row,
-  .about-2 {
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
   }
-  .about-2,
+  .about-col-2,
   .copyright {
     font-size: 14px;
   }
   .contact-right,
   .contact-left {
-    flex-basis: 40%;
+    flex-basis: 100%;
   }
-  .box {
+  .layer {
     width: 100%;
     padding: 0;
     font-size: 10px;
   }
-  .box > .deploy > a {
+  .layer > .deploy > a {
+    margin-top: 4px;
     font-size: 10px;
     width: 40px;
     height: 20px;
@@ -418,8 +476,9 @@ nav .fa-solid {
   .skill-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  .github-content img{
+  .github-content.container img{
     width: 100%;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 600px) {
@@ -427,22 +486,22 @@ nav .fa-solid {
     display: block;
     font-size: 25px;
   }
-  .head-text {
+  .header-text {
     margin-top: 60%;
     font-size: 16px;
   }
-  .head-text h1 {
+  .header-text h1 {
     margin-bottom: 40px;
     font-size: 40px;
   }
-  .head-text p {
+  .header-text p {
     font-size: 30px;
   }
-  .work-wrap {
+  .work-list {
     grid-template-columns: 1fr;
   }
   nav ul {
-    background: black;
+    background: #ff004f;
     position: fixed;
     top: 0;
     right: -200px;
@@ -464,11 +523,11 @@ nav .fa-solid {
   .sub-title {
     font-size: 40px;
   }
-  .row,
-  .about-2 {
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
   }
-  .about-2,
+  .about-col-2,
   .copyright {
     font-size: 14px;
   }
@@ -476,11 +535,11 @@ nav .fa-solid {
   .contact-left {
     flex-basis: 100%;
   }
-  .box {
+  .layer {
     width: 100%;
     padding: 0;
   }
-  .box > .deploy > a {
+  .layer > .deploy > a {
     font-size: 13px;
     width: 40px;
     height: 20px;
@@ -489,14 +548,57 @@ nav .fa-solid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-.github-content{
-  margin-top: 30px;
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  line-height: 1.4;
 }
-/* .calendar.react-activity-calendar {
-  width: 80%;
-}*/
-.calendar.react-activity-calendar .js-calendar-graph-svg{
-   width: 80%;
-   margin: auto;
-} 
+.project-card {
+  background-color: rgb(32, 30, 30);
+  border-radius: 2%;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 8px 6px -6px black;
+}
+.project-card > p {
+    margin: 10px 0;
+}
+.projects img {
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.buttons button {
+  padding: 10px;
+  color: white;
+  background: rgb(236, 9, 9);
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+}
+.buttons button > a,
+.buttons button > a:visited {
+  text-decoration: none;
+  color: white;
+}
+.fa-brands,
+.fa-solid {
+  margin-left: 10px;
+}
+.bold{
+    font-weight: 600;
+}
+@media only screen and (min-width: 350px) and (max-width: 840px){
+    .projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .buttons{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
