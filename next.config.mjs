@@ -11,9 +11,10 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  // Add this section for GitHub Pages deployment
+  // Enable static export
+  output: 'export', // This enables static export
   basePath: '/ramsarraf11.github.io', // Replace with your repository name
   assetPrefix: '/ramsarraf11.github.io/', // Replace with your repository name
-}
+};
 
-export default nextConfig
+export default nextConfig;
